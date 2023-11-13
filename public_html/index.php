@@ -1,5 +1,3 @@
 <?php
-
-echo "hello world";
-
+echo $_SERVER['SERVER_ADDR'];
 ?>
