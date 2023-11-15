@@ -1,6 +1,7 @@
-https://crud-scandiweb-42.000webhostapp.com/<?php
-$file = fopen('test.txt', 'w');
-fwrite($file, 'hello world');
-rewind($file);
-$writtenToFile = fread($file, filesize('./test.txt'));
-echo $writtenToFile;
+<?php
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="file-upload" id="file-upload">
+    <input type="submit" value="submit">
+</form>
+
+
