@@ -37,14 +37,14 @@ const toggleType = (type) => {
       input.id = "weight";
       input.name = "weight";
       container.classList.add("Books");
-      infoDiv.textContent = "Please provide weight."
+      infoDiv.textContent = "Please provide weight.";
       break;
     case "Discs":
       label.textContent = "Size: ";
       input.name = "size";
       input.id = "size";
       container.classList.add("Discs");
-      infoDiv.textContent = "Please provide size."
+      infoDiv.textContent = "Please provide size.";
       break;
     case "Furniture":
       //! Height
@@ -52,7 +52,7 @@ const toggleType = (type) => {
       input.name = "height";
       input.id = "height";
       container.classList.add("Furniture");
-      infoDiv.textContent = "Please provide dimensions."
+      infoDiv.textContent = "Please provide dimensions.";
 
       //! Width
       const secondContainer = document.createElement("div");
@@ -131,6 +131,8 @@ const add = () => {
 };
 
 const insertProduct = async (productInfo) => {
+  const addButton = document.getElementById("add-button");
+  addButton.disabled = "true";
   const response = await fetch("../../Controllers/InsertProduct.php", {
     method: "post",
     headers: {
@@ -149,6 +151,8 @@ const insertProduct = async (productInfo) => {
   }
 
   console.log({ text });
+  addButton.disabled = "false";
+  console.log({ addButton });
 };
 
 toggleType("Books");

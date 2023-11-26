@@ -13,10 +13,10 @@ class Database
         $this->_connection = new mysqli('localhost', 'id21517975_elbasel', 'HelloThere@123', 'id21517975_crud');
     }
 
-    // public function __destruct()
-    // {
-    // $this->_connection->close();
-    // }
+    public function __destruct()
+    {
+    $this->_connection->close();
+    }
 
     public function insert(string $table_name, array $data)
     {
