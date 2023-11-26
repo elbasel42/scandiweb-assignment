@@ -1,4 +1,4 @@
-<div class="form-container">
+<div class="form-container" id="product_form">
     <div>
         <label for="sky">Sku:</label>
         <input type="text" name="sku" id="sku">
