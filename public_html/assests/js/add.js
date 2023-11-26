@@ -4,7 +4,7 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-document.getElementById("type").addEventListener("input", (e) => {
+document.getElementById("productType").addEventListener("input", (e) => {
   const type = e.target.value;
   toggleType(type);
 });
@@ -21,7 +21,7 @@ const removeExtraElements = () => {
 const toggleType = (type) => {
   const formContainer = document.querySelector(".form-container");
   const infoDiv = document.getElementById("info-div");
-  const container = document.getElementById("varible-input");
+  const container = document.getElementById("variable-input");
   container.classList = "";
   container.innerHTML = "";
 
@@ -90,7 +90,7 @@ const add = () => {
   const sku = document.getElementById("sku").value;
   const name = document.getElementById("name").value;
   const price = document.getElementById("price").value;
-  const table = document.getElementById("type").value;
+  const table = document.getElementById("productType").value;
   const errorOutput = document.getElementById("error");
 
   if (sku == "" || name == "" || price == "" || table == "") {

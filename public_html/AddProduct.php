@@ -13,16 +13,16 @@
     </div>
     <div>
         <label for="Type">Type:</label>
-        <select name="type" id="type">
+        <select name="type" id="productType">
             <option value="Books">Book</option>
             <option value="Discs">Disc</option>
             <option value="Furniture">Furniture</option>
         </select>
     </div>
-    <div id="varible-input"></div>
+    <div id="variable-input"></div>
 </div>
 <div id="info-div"></div>
-<button onclick="add(event)" id="add-button">Add</button>
+<button onclick="add(event)" id="add-button">Save</button>
 <a href="./index.php">Cancel</a>
 <div id="error"></div>
 
