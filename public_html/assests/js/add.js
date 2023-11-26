@@ -132,7 +132,7 @@ const add = () => {
 
 const insertProduct = async (productInfo) => {
   const addButton = document.getElementById("add-button");
-  addButton.disabled = "true";
+  // addButton.disabled = "true";
   const response = await fetch("../../Controllers/InsertProduct.php", {
     method: "post",
     headers: {
@@ -150,9 +150,9 @@ const insertProduct = async (productInfo) => {
     window.location.replace("./index.php");
   }
 
-  console.log({ text });
-  addButton.disabled = "false";
-  console.log({ addButton });
+  // console.log({ text });
+  // addButton.disabled = "false";
+  // console.log({ addButton });
 };
 
 toggleType("Books");
