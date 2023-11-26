@@ -15,7 +15,7 @@
         <label for="Type">Type:</label>
         <select name="type" id="productType">
             <option value="Books">Book</option>
-            <option value="Discs">Disc</option>
+            <option value="Discs">DVD</option>
             <option value="Furniture">Furniture</option>
         </select>
     </div>
