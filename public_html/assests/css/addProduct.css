@@ -1,0 +1,54 @@
+* {
+  font-size: 1.5rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container div {
+  display: flex;
+  margin-block: 0.4rem;
+}
+
+.form-container div input,
+select {
+  flex: 9;
+}
+
+.form-container div label {
+  flex: 1;
+}
+
+a {
+  background-color: white;
+  display: inline-flex;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 24px;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  cursor: pointer;
+}
+
+button {
+  background-color: green;
+  color: white;
+  box-shadow: none;
+  border: 1px solid black;
+  border-radius: 24px;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  cursor: pointer;
+}
+
+#error {
+  font-style: italic;
+  color: red;
+}
+
+#info-div {
+  margin-block: 0.2rem;
+}
